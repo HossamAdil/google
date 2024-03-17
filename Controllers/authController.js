@@ -134,7 +134,7 @@ exports.resetPassword = async (req, res) => {
     }
 };
 
-exports.SignUpOrLoginWithGoogle = async (req, res) => {
+exports.google = async (req, res) => {
  
     const { firstName, lastName, email, password, birthdate, role, active } = req.body;
     const user = await RegisterUser.findOne({ email });
