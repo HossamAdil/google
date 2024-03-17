@@ -158,7 +158,7 @@ exports.google = async (req, res) => {
         });
     }else{
 
-      const usr = new User({
+      const usr = new RegisterUser({
           firstName,
           lastName,
           email,
